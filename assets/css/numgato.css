@@ -30,7 +30,7 @@ img{
 }
 
 #tituloApresentacao{
-    background: url(/assets/img/icons/numgato/nuvem-titulo.png);
+    background: url(../img/icons/numgato/nuvem-titulo.png);
     background-size: 90vh;
     background-position: center;
     background-repeat: no-repeat;
