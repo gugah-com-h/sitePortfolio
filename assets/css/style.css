@@ -1,36 +1,36 @@
 @font-face {
     font-family: SuperDream;
-    src: url('/assets/fonts/Super\ Dream.ttf');
+    src: url('assets/fonts/Super\ Dream.ttf');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: ComfortaaRegular;
-    src: url('/assets/fonts/comfortaa/Comfortaa-Regular.ttf');
+    src: url('assets/fonts/comfortaa/Comfortaa-Regular.ttf');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: ComfortaaBold;
-    src: url('/assets/fonts/comfortaa/Comfortaa-Bold.ttf');
+    src: url('assets/fonts/comfortaa/Comfortaa-Bold.ttf');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: ComfortaaLight;
-    src: url('/assets/fonts/comfortaa/Comfortaa-Light.ttf');
+    src: url('assets/fonts/comfortaa/Comfortaa-Light.ttf');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: FascinateInline;
-    src: url('/assets/fonts/Fascinate_Inline/FascinateInline-Regular.ttf');
+    src: url('assets/fonts/Fascinate_Inline/FascinateInline-Regular.ttf');
     font-weight: normal;
     font-style: normal;
 }
 @font-face{
     font-family: Kavoon;
-    src: url('/assets/fonts/Kavoon/Kavoon-Regular.ttf');
+    src: url('assets/fonts/Kavoon/Kavoon-Regular.ttf');
     font-weight: normal;
     font-style: normal;
 }
