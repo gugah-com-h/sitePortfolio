@@ -1,0 +1,186 @@
+body{
+    background-color: #fd9b17;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#aguaEfeito{
+    background: #FFAD01;
+    background: linear-gradient(180deg, rgba(255, 173, 1, 1) 13%, rgba(93, 1, 253, 1) 14%);
+    height: 100vh;
+    width: 200vw;
+    display: flex;
+    position: relative;
+    top: 30vh;
+    animation: descerAgua 3s;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+#aguaEfeito > img{
+    width: 100vw;
+    position: relative;
+    z-index: 1;
+}
+
+#patoEfeito{
+    position: absolute;
+    top: -12vh;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    animation: surgirPato 9s;
+}
+
+#patoEfeito > img{
+    width: 100vw;
+    transform: scale(1.3);
+}
+
+#textos{
+    z-index: 2;
+    position: absolute;
+    text-align: center;
+}
+
+#textoDestaque{
+    position: absolute;
+    top: -30vh;
+    right: 0vh;
+    left: 0vh;
+    opacity: 1;
+    animation: bemVindoSubir 8s;
+}
+
+#fraseBoasVindas{
+    margin-top: 20vh;
+    animation: textoBoasVindas 10s;
+}
+
+#aperteContinuar{
+    z-index: 3;
+    position: absolute;
+    top: 0vh;
+    right: 0vh;
+    left: 0vh;
+    height: 100vh;
+    width: 100vw;
+    opacity: 0;
+    animation: apertarContinuar 11s;
+}
+
+#textoContinuar{
+    z-index: 2;
+    position: absolute;
+    top: 40vh;
+    left: 0vh;
+    right: 0vh;
+    opacity: 1;
+    animation: textoContinuarAparecendo 14s;
+}
+
+@keyframes descerAgua {
+    0%{
+        top: 0vh;
+    }
+    25%{
+        top: 10vh;
+        rotate: 1deg;
+    }
+    50%{
+        top: 20vh;
+        rotate: -1deg;
+    }
+    80%{
+        rotate: 1deg;
+        top: 29vh;
+    }
+    90%{
+        top: 27vh;
+        /* rotate: -0.5deg; */
+    }
+    100%{
+        top:30vh;
+    }
+}
+
+@keyframes bemVindoSubir {
+    0%{
+        opacity: 0;
+        top: 0vh;
+    }
+    50%{
+        opacity: 0;
+        top: 0vh;
+    }
+    60%{
+        opacity: 1;
+        top: 0vh;
+    }
+    80%{
+        top: -30vh;
+    }
+}
+
+@keyframes textoBoasVindas {
+    0%{
+        opacity: 0;
+    }
+    70%{
+        opacity: 0;
+    }
+    90%{
+        opacity: 1;
+    }
+}
+
+@keyframes apertarContinuar {
+    0%{
+        top: 100vh;
+    }
+    90%{
+        top: 100vh;
+    }
+    100%{
+        top: 0vh;
+    }
+}
+
+@keyframes textoContinuarAparecendo {
+    0%{
+        opacity: 0;
+    }
+    70%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes surgirPato {
+    0%{
+        opacity: 0;
+        top: 200vh;
+    }
+    36%{
+        opacity: 0;
+    }
+    37%{
+        opacity: 1;
+    }
+    45.9%{
+        top: 200vh;
+    }
+    46%{
+        top: -6vh;
+    }
+    80%{
+        top: -6vh;
+    }
+}

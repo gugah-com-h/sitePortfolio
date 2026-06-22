@@ -1,0 +1,126 @@
+main{
+    background: #FFAD01;
+    background: linear-gradient(180deg, rgba(255, 173, 1, 0) 94%, #f8dca1 94%);
+}
+
+img{
+    user-select: none;
+    pointer-events: none;
+}
+
+#numgatoBanner{
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    -moz-user-select: none; 
+    user-select: none;
+}
+
+#imagemPrincipal{
+    margin: 0 auto;
+    height: 50vh;
+}
+
+#apresentacao{
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    background: #FFAD01;
+    background: linear-gradient(0deg, rgba(255, 173, 1, 0) 19%, rgba(10, 1, 23, 1) 20%, rgba(36, 0, 36, 1) 40%, rgba(36, 0, 36, 1) 75%, #ffe5c4 75.2%);
+}
+
+#tituloApresentacao{
+    background: url(/assets/img/icons/numgato/nuvem-titulo.png);
+    background-size: 90vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 15vh 0;
+    font-family: Kavoon;
+    font-size: 5em;
+    color: var(--texto-destaque-1);
+}
+
+#subTituloApresentacao{
+    margin: 10vh 0vh;
+    color: var(--texto-claro);
+    font-size: 2em;
+}
+
+#apresentacao > p{
+    width: 50%;
+    margin: 5vh auto;
+    font-size: 1.2em;
+}
+
+#apresentacao div > img{
+    width: 80%;
+    border-radius: 20px;
+}
+
+#apresentacao > div{
+    background-size: 100%;
+    background-position: center;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#mascote{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#gangue{
+    background-position: center -9vh;
+    background-repeat: no-repeat;
+    background: #FFAD01;
+    background: linear-gradient(180deg, rgba(255, 173, 1, 0) 11%, #f8dca1 12%);
+}
+
+#gangue > img{
+    width: 100%;
+    margin-top: -10vh;
+}
+
+#divMascote > img{
+    height: 80vh;
+}
+
+.ratoDiv{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 5vh auto;
+    width: 70%;
+}
+
+.divRatoPt2, .divRatoPt1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+    width: 90%;
+}
+
+.divRatoPt2 p{
+    padding: 1.5em;
+    border-bottom: solid 2px var(--texto);
+    border-radius: 10px;
+}
+
+.ratoDiv img{
+    height: 40vh;
+    filter: drop-shadow(5px 5px 5px rgba(0, 6, 24, 0.363));
+}
+
+#gangueBanner{
+    text-align: center;
+}
+
+#gangueBanner > img{
+    width: 50vw;
+    margin-bottom: 10vh;
+}

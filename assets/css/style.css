@@ -1,0 +1,214 @@
+@font-face {
+    font-family: SuperDream;
+    src: url('/assets/fonts/Super\ Dream.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: ComfortaaRegular;
+    src: url('/assets/fonts/comfortaa/Comfortaa-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: ComfortaaBold;
+    src: url('/assets/fonts/comfortaa/Comfortaa-Bold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: ComfortaaLight;
+    src: url('/assets/fonts/comfortaa/Comfortaa-Light.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: FascinateInline;
+    src: url('/assets/fonts/Fascinate_Inline/FascinateInline-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: Kavoon;
+    src: url('/assets/fonts/Kavoon/Kavoon-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root{
+    --texto: #270e03;
+    --texto-claro: #e4d2ca;
+    --texto-destaque-1: #FFAD01;
+    --button-1: #06f;
+    --background: #f3e9dd;
+    --background-destaque-1: #FFAD01;
+    --background-destaque-2: #5d01fd;
+    --background-footer: #050114;
+}
+
+*{
+    margin: 0;
+    font-family: ComfortaaRegular;
+    color: var(--texto);
+}
+
+b{
+    color: var(--texto-destaque-1);
+}
+
+html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background);
+}
+
+/* ==================== HEADER ====================*/
+header{
+    position: sticky;
+    display: flex;
+    width: 100%;
+}
+.header-contents{
+    margin: 0.5vw;
+    padding: 0.5vw;
+    /* ATRIBUTOS DO DISPLAY FLEX */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1vw;
+}
+/* ------------- HEADER PART 1 ------------- */
+#header-part1{
+    width: 40%;
+}
+#header-part1 p{
+    font-size: 5vh;
+    font-family: SuperDream, sans-serif;
+    color: var(--texto-destaque-1);
+}
+#icon-cabecalho{
+    border-radius: 10px;
+    height: 10vh;
+    width: 10vh;
+}
+/* ------------- HEADER PART 2 ------------- */
+#header-part2{
+    width: 60%;
+    justify-content: flex-end;
+}
+#header-lista{
+    display: flex;
+    gap: 3.5vw;
+}
+#header-lista li{
+    padding: 0.2vw;
+    list-style: none;
+}
+#header-lista a{
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+#header-lista a:hover{
+    color: var(--texto-destaque-1);
+}
+
+/* ==================== FOOTER ==================== */
+footer{
+    display: flex;
+    background-color: var(--background-footer);
+    padding: 3vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    align-items: center;
+    justify-content: center;
+    gap: 10vw;
+}
+#section-copyright{
+    width: 10%;
+}
+#section-contato{
+    display: flex;
+    width: 25%;
+    justify-content: center;
+}
+#section-outros-contatos{
+    width: 25%;
+}
+/* ------------- CONTATOS ------------- */
+
+#contato-rapido p{
+    font-size: larger;
+    font-family: ComfortaaBold;
+}
+#contato-rapido form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#contato-rapido label{
+    color: var(--texto-claro);
+    width: 100%;
+    margin-top: 3vh;
+    margin-bottom: 0.5vh;
+}
+#contato-rapido input{
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 2vh;
+    padding: 1vh;
+}
+#contato-rapido input[type="submit"]{
+    text-transform: uppercase;
+}
+/* ------------- COPYRIGHT ------------- */
+footer p, h3, h4{
+    color: var(--texto-claro);
+}
+/* ------------- OUTROS CONTATOS ------------- */
+#section-outros-contatos{
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+#outros-contatos{
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+#outros-contatos p{
+    font-size: 2.2vh;
+}
+#outros-contatos h4{
+    margin-bottom: 1.2vh;
+    margin-top: 2vh;
+}
+#nav-redes-sociais ul{
+    display: flex;
+    gap: 1vw;
+    margin-block-start: 0px;
+    margin-block: 0px;
+    padding-inline-start: 0px;
+}
+#nav-redes-sociais li{
+    list-style: none;
+}
+#nav-redes-sociais img{
+    height: 3.2vh;
+    filter: brightness(0) saturate(100%) invert(87%) sepia(39%) saturate(123%) hue-rotate(326deg) brightness(96%) contrast(86%);
+}
+
+
+/* ==================== CONTEUDO ==================== */
+main{
+    flex: 1;
+    padding-bottom: 15vh;
+}

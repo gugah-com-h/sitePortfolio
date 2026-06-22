@@ -1,0 +1,230 @@
+html{
+    overflow: hidden;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+main{
+    background: #5D01FD;
+    background: linear-gradient(rgba(93, 1, 253, 1) 36%, rgba(2, 10, 51, 0) 36.1%, rgba(93, 1, 253, 0) 60%, rgba(69, 40, 80, 0.336) 100%);
+}
+
+#patoBanner{
+    width: 100%;
+    height: 20%;
+    pointer-events: none;
+    -moz-user-select: none; 
+    user-select: none;
+}
+
+#apresentacaoPrincipal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 15vh;
+    padding: 8vh;
+    background: linear-gradient(var(--background-destaque-1) 70%, var(--background-destaque-2) 71%);
+    border-radius: 15vh 1.5vh;
+}
+
+#apresentacaoPrincipal p{
+    font-weight: 500;
+}
+
+#tituloApresentacao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#tituloApresentacao > h1{
+    position: absolute;
+    -moz-user-select: none; 
+    user-select: none;
+}
+
+#tituloApresentacao > img{
+    position: absolute;
+    height: 1.1em;
+    rotate: 25deg;
+    z-index: 1;
+    left: 1.1em;
+    top: -2.15em;
+    pointer-events: none;
+    -moz-user-select: none; 
+    user-select: none;
+}
+
+#textoApresentacao{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 4vh;
+}
+
+#textoApresentacao > img{
+    height: 25vh;
+    border-radius: 100%;
+    border: var(--background-destaque-1) solid 10px;
+}
+
+#secaoProjetos > h1{
+    margin: 8vh;
+    text-align: center;
+    font-size: 4vh;
+}
+
+#cardsProjetos{
+    display: flex;
+    flex-direction: column;
+    gap: 15vh;
+}
+
+
+.card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.cardMetade1{
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    width: 50%;
+}
+
+.tituloProjeto h3{
+    color: var(--texto);
+}
+
+.cardMetade2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.imgProjeto img{
+    width: 23vw;
+    height: 45vh;
+    border-radius: 10px;
+    transition: 1.2s;
+}
+
+.imgProjeto img:hover{
+    animation: moverCard 7s infinite;
+    transform: scale(1.1);
+}
+
+.btnProjeto button{
+    background-color: var(--button-1);
+    padding: 1vh;
+    border-radius: 5px;
+    border: none;
+}
+
+.btnProjeto button > a{
+    text-decoration: none;
+    color: var(--texto-claro);
+    font-weight: 800;
+    font-size: 2vh;
+}
+
+#transicaoAgua{
+    background-color: #5d01fd;
+    z-index: 10;
+    height: 180vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    position: absolute;
+    top: 0vh;
+    right: 0vw;
+    animation: sumirAgua 3s;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#transicaoAgua > img{
+    width: 100%;
+    position: absolute;
+    z-index: 12;
+}
+
+#transicaoBackground{
+    background-color: #fd9b17;
+    z-index: 9;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0vh;
+    right: 0vw;
+    animation: sumirBackground 3s;
+    opacity: 0;
+    pointer-events: none;
+}
+
+@keyframes sumirBackground {
+    0%{
+        opacity: 1;
+    }
+    39%{
+        opacity: 1;
+    }
+    40%{
+        opacity: 0;
+    }
+}
+
+@keyframes sumirAgua {
+    0%{
+        top: 50vh;
+        opacity: 1;
+        background: #fd9b17;
+        background: linear-gradient(180deg, #fd9b17 29%, #5d01fd 30%);
+    }
+    50%{
+        top: -55vh;
+    }
+    70%{
+        top: -55vh;
+    }
+    99%{
+        top: 110vh;
+        opacity: 1;
+        background: #fd9b17;
+        background: linear-gradient(180deg, rgba(255, 173, 1, 0) 29%, #5d01fd 30%);
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes moverCard {
+    0%{
+        /* transform: translate(5px, 10px); */
+    }
+    25%{
+        transform: translate(5px, 10px) scale(1.1);
+    }
+    50%{
+        transform: translate(10px, 5px) scale(1.1);
+    }
+    75%{
+        transform: translate(10px, 10px) scale(1.1);
+    }
+}

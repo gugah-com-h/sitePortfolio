@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/home.css"> <!--Aqui ficará o estilo próprio de cada página-->
+    <link rel="shortcut icon" href="/assets/img/favicon/pato_mafioso.png" type="image/png">
+</head>
+<body>
+    
+    <!-- CABEÇALHO -->
+    <header>
+        <!-- TITULO -->
+        <section id="header-part1" class="header-contents">
+            <img id="icon-cabecalho" src="/assets/img/icons/cabecalho/pato_mafioso.png" alt="">
+            <p id="titulo-cabecalho">Gustavo Rocha</p>
+        </section>
+
+        <!-- NAVEGAÇÃO -->
+        <section id="header-part2" class="header-contents">
+            <nav id="nav-cabecalho">
+                <ul id="header-lista" class="lista">
+                    <li><a href="./home.html">Início</a></li>
+                    <li><a href="./faculdade.html">Faculdade</a></li>
+                    <li><a href="./numgato.html">Numgato</a></li>
+                    <li><a href="./outros.html">Outros Projetos</a></li>
+                    <li><a href="./sobre_mim.html">Sobre Mim</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main>
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+    <footer>
+        <!-- COPYRIGHT -->
+        <section id="section-copyright">
+            <p>&copy; Gugah - 2026</p>
+        </section>
+
+        <!-- CONTATO -->
+        <section id="section-contato">
+            <div id="contato-rapido">
+                <p>Entre em contato!</p>
+                <form action="https://formspree.io/f/xdajelzj" method="post">
+                    <label for="email">Seu email: </label>
+                    <input type="email" name="email" id="email">
+                    <label for="nome">Seu nome:</label>
+                    <input type="text" name="nome" id="nome">
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+        </section>
+
+        <!-- OUTROS CONTATOS -->
+        <section id="section-outros-contatos">
+            <div id="outros-contatos">
+                <h3>Contato Rápido</h3>
+                <!-- EMAIL -->
+                <div>
+                    <h4>Email</h4>
+                    <p>contato.gustavo.rocha.gomes@gmail.com</p>
+                    <p>rocha.gomes@aluno.ifsp.edu.br</p>
+                </div>
+                <!-- TELEFONE -->
+                <div>
+                    <h4>Celular</h4>
+                    <p>(16) 99629-0288</p>
+                </div>
+            </div>
+            <div id="nav-redes-sociais">
+                <ul>
+                    <li><a target="_blank" href="https://www.linkedin.com/in/gustavo-rocha-gomes"><img src="/assets/img/icons/footer/linkedin.svg" alt=""></a></li>
+                    <li><a target="_blank" href="https://github.com/gugah-com-h"><img src="/assets/img/icons/footer/github.svg" alt=""></a></li>
+                    <li><a target="_blank" href="https://www.instagram.com/gugah_ya"><img src="/assets/img/icons/footer/instagram.svg" alt=""></a></li>
+                </ul>
+            </div>
+        </section>
+    </footer>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+</body>
+</html>
